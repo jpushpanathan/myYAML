@@ -69,7 +69,7 @@ stages:
     - task: AzureResourceManagerTemplateDeployment@3
       inputs:
         deploymentScope: 'Resource Group'
-        azureResourceManagerConnection: JPBicepConnect'
+        azureResourceManagerConnection: 'JPBicepConnect'
         subscriptionId: 'c5a12d20-705d-4d07-a28f-f8a5610d0d81'
         action: 'Create Or Update Resource Group'
         resourceGroupName: 'JPBicep'
