@@ -82,7 +82,7 @@ stages:
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'c5a12d20-705d-4d07-a28f-f8a5610d0d81'
+        azureSubscription: 'JPBicepConnect'
         appType: 'webApp'
         WebAppName: 'bnkYAML'
         packageForLinux: '$(System.ArtifactsDirectory)/**/OldDadApp.zip'
