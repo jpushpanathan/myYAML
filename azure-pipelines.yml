@@ -69,11 +69,11 @@ stages:
     - task: AzureResourceManagerTemplateDeployment@3
       inputs:
         deploymentScope: 'Resource Group'
-        azureResourceManagerConnection: 'FY20-ImaDemo (b8c7d821-4fbb-4089-8978-b966512a6a45)'
-        subscriptionId: 'b8c7d821-4fbb-4089-8978-b966512a6a45'
+        azureResourceManagerConnection: JPBicepConnect'
+        subscriptionId: 'c5a12d20-705d-4d07-a28f-f8a5610d0d81'
         action: 'Create Or Update Resource Group'
-        resourceGroupName: 'lz-yaml'
-        location: 'Central US'
+        resourceGroupName: 'JPBicep'
+        location: 'UK South'
         templateLocation: 'Linked artifact'
         csmFile: '$(System.ArtifactsDirectory)/**/WebAppWithSlots-Windows.json'
         csmParametersFile: '$(System.ArtifactsDirectory)/**/azuredeploy.parameters.json'
